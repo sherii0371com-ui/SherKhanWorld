@@ -23,7 +23,7 @@ jobs:
       - name: Extract Android project
         run: |
           mkdir -p project
-          unzip -q "SherKhanWorld_4.8_APK_BUILD_READY_FINAL.zip" -d project
+          unzip -q "SherKhanWorld_5.0_EASY_CATEGORIES.zip" -d project
 
       - name: Find Android project
         run: |
