@@ -1,0 +1,28 @@
+name: Build Sher Khan World APK
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Create Dummy Android Project Structure
+        run: |
+          echo "rootProject.name='SherKhanWorld'" > settings.gradle
+          mkdir -p app/src/main
+          echo "android { namespace 'com.sherkhan.world' compileSdk 34 }" > app/build.gradle
+
+      - name: Build Debug APK
+        run: echo "Building dummy APK for SherKhanWorld"
