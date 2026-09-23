@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شیر خان ورلڈ اینڈ عباس ایمپائر</title>
+    <style>
+        :root {
+            --primary-gold: #d4af37;
+            --dark-bg: #0b0b0b;
+            --card-bg: #161616;
+            --text-color: #ffffff;
+            --accent-green: #2ecc71;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #000000, #1a1a1a);
+            border-bottom: 2px solid var(--primary-gold);
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: var(--primary-gold);
+            margin: 0;
+            font-size: 24px;
+        }
+        header p {
+            color: #b3b3b3;
+            font-size: 14px;
+            margin: 5px 0 0 0;
+        }
+        .container {
+            padding: 15px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .card h3 {
+            color: var(--primary-gold);
+            margin-top: 0;
+        }
+        .btn {
+            background-color: var(--primary-gold);
+            color: #000;
+            border: none;
+            padding: 10px 15px;
+            border-names: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .badge {
+            background-color: var(--accent-green);
+            color: white;
+            padding: 3px 8px;
+            font-size: 12px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>شیر خان ورلڈ اینڈ عباس ایمپائر</h1>
+        <p>مطلق اقتدار، فلاحی مارکیٹ اور شاہانہ رائڈر نیٹ ورک</p>
+    </header>
+
+    <div class="container">
+        <!-- ویلکم کارڈ -->
+        <div class="card">
+            <span class="badge">سسٹم آن لائن</span>
+            <h3>خوش آمدید، حضورِ والا!</h3>
+            <p>یہ آپ کی ذاتی سپر ایپ کا بنیادی پورٹل ہے۔ یہاں سے آپ کی پوری سلطنت کنٹرول ہوگی۔</p>
+        </div>
+
+        <!-- غریبوں کی فلاحی مارکیٹ -->
+        <div class="card">
+            <h3>غریبوں کی فلاحی مارکیٹ</h3>
+            <p>مفت راشن، ضروریاتِ زندگی اور مستحقین کے لیے خصوصی امدادی نظام فعال ہے۔</p>
+            <button class="btn" onclick="alert('فلاحی مارکیٹ پورٹل اوپن ہو رہا ہے...')">فلاحی مارکیٹ درج کریں</button>
+        </div>
+
+        <!-- رائڈر نیٹ ورک -->
+        <div class="card">
+            <h3>شاہانہ رائڈر نیٹ ورک</h3>
+            <p>تیز رفتار ترسیل اور سروسز جو آپ کے ایمپائر کے ہر کونے تک جڑی ہیں۔</p>
+            <button class="btn" onclick="alert('رائڈر نیٹ ورک سے رابطہ قائم کیا جا رہا ہے...')">رائডার سروس چیک کریں</button>
+        </div>
+    </div>
+
+</body>
+</html>
