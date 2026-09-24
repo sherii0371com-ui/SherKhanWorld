@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SherKhanWorld &amp; Sultan AI"
+        android:textColor="#FFD700"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: Neural-Sync Active | Escrow Guard Locked"
+        android:textColor="#00FF00"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:paddingBottom="12dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#1E1E1E"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txtConsole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[Sultan Core]: Initialized Pakistan-wide Market &amp; Land Scanner.\n[Sultan Core]: WhatsApp Integration Active.\n[Sultan Core]: Escrow Payment System Secured.\n[Sultan Core]: AI Cinematic Reels Generator Ready (Bazaar, Rider, Food, Jewelry, Homes, Hospitals, Quran 30 Paras &amp; Duas)."
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:fontFamily="monospace"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnWhatsApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Launch WhatsApp Integration"
+            android:backgroundTint="#25D366"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnMarketScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Run Pakistan-Wide Market Scan"
+            android:backgroundTint="#FFD700"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnGenerateReel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate AI Reel (Bazaar, Rider, Quran 30 Paras)"
+            android:backgroundTint="#FF8C00"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</LinearLayout>
